@@ -4,5 +4,8 @@ def join_nested_strings(src)
   output = ""
   for array in src do
     for i in array do
-      if i.class == String
+      output = output + " " + i if i.class == String
+    end
+  end
+  output
 end
